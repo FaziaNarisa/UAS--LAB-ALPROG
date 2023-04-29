@@ -1,6 +1,7 @@
 # UAS-LAB ALPROG
-Program Peminjaman dan Pengembalian Buku Menggunakan Bahasa C
+Program Peminjaman dan Pengembalian Buku.
 
-#Program ini dubuat untuk memenuhi mata kuliah Algoritma dan Pemograman
-Adapun anggota dari kelompok kami:
-Nama 
+# Description
+Program ini dibuat untuk memenuhi mata kuliah Algoritma dan Pemograman.
+Ini adalah program yang dibuat menggunakan bahasa C. 
+
