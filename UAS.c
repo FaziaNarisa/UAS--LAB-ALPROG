@@ -14,26 +14,36 @@ int tahun, x, i, pil,cuy,j, bil;
 char jd[50];
 
 void lihat(){
-    FILE*biodata;
-    biodata=fopen("tugas.txt", "r");
-    for (i=1; i<=x; i++)
-    {
-        printf("        Daftar Buku      \n");
-        printf("=========================\n");
-        printf("\tjudul\t : %s\n", perpus[i].judul);
-        printf("\tpengarang\t : %s\n", perpus[i].pengarang);
-        printf("\tpenerbit\t : %s\n", perpus[i].penerbit);
-        printf("\ttahun terbit\t : %d\n", perpus[i].tahun);
-        fclose(biodata);
+    int i;
+
+    printf("===========================================================================================================\n");
+    printf("||%-5s||%-30s||%-20s||%-25s||%-15s||\n", "No", "Judul Buku", "Nama Pengarang", "Penerbit", "Tahun Terbit");
+    printf("-----------------------------------------------------------------------------------------------------------\n");
+    for(i = 0; i < x; i++){
+        printf("||%-5d||%-30s||%-20s||%-25s||%-15d||\n", (i+1), perpus[i].judul, perpus[i].pengarang, perpus[i].penerbit, perpus[i].tahun);
     }
+    printf("===========================================================================================================\n");
 }
 
+void init(){
+    strcpy(perpus[x].judul, "Filosofi Teras");
+    strcpy(perpus[x].pengarang, "Henry Manampiring");
+    strcpy(perpus[x].penerbit, "Kompas");
+    perpus[x].tahun = 2018;
+    x++;
+    strcpy(perpus[x].judul, "Laut Bercerita");
+    strcpy(perpus[x].pengarang, "Leila Chudori");
+    strcpy(perpus[x].penerbit, "KPG");
+    perpus[x].tahun = 2017;
+    x++;
+}
 
-void input (){
+void input(){
     FILE*fp;
     fp=fopen("daftar buku .txt", "a");
-    printf("        Input Buku      \n");
-    printf("=========================\n");
+    printf("\n===========================================================================================================\n");
+    printf("||                                               Penambahan Buku                                         ||\n");
+    printf("===========================================================================================================\n");
     printf("judul\t:");fflush(stdin); gets(perpus[x].judul);
     fprintf(fp,"judul %s\n", perpus[x].judul);
     printf("pengarang\t:");fflush(stdin); gets(perpus[x].pengarang);
@@ -48,13 +58,13 @@ void input (){
 
 int main(){
     do{
-        printf("======================================\n");
-        printf("|        program peminjaman buku     |\n");
-        printf("=====================================\n");
-        printf("1.melihat data buku\n");
-        printf("2.menginput data\n");
-        printf("3.keluar\n");
-        printf("pilihan :");
+        printf("===========================================================================================================\n");
+        printf("||                                          Program Peminjaman Buku                                      ||\n");
+        printf("===========================================================================================================\n");
+        printf("1.Menampilkan Data Buku\n");
+        printf("2.Menamba Data Buku\n");
+        printf("3.Keluar\n");
+        printf("\nPilihan: ");
         scanf("%d", &pil);
         switch(pil){
             case 1 :
@@ -64,7 +74,7 @@ int main(){
                 input();
                 break;
              case 3:
-                printf("keluar");
+                printf("Keluar");
                 break;
         }
     }while(pil!=3);
