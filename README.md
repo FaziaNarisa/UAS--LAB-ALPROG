@@ -9,12 +9,18 @@ terdapat 50 data buku, dimana hanya 45 data buku yang tersedia sedangkan sisanya
  Adapun anggota kelompok:
 
 Anggota 1
+
 Nama: Alya Natasya
+
 NIM : 2208108010030
+
 Username GITHUB : alyanatasyaa
 
 Anggota 2
+
 Nama: Fazia Narisa
+
 NIM : 2208108010028
+
 Username GITHUB : FaziaNarisa
 
