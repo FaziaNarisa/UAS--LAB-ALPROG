@@ -5,7 +5,8 @@ Program Peminjaman dan Pengembalian Buku.
 Program ini dibuat untuk memenuhi mata kuliah Algoritma dan Pemograman.
 Ini adalah program yang dibuat menggunakan bahasa C. Pada program peminjaman buku kali ini
 terdapat 50 data buku, dimana hanya 45 data buku yang tersedia sedangkan sisanya dapat diinput oleh pengguna.
-Adapun anggota kelompok:
+ 
+ Adapun anggota kelompok:
 
 Anggota 1
 
