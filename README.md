@@ -7,6 +7,7 @@ Ini adalah program yang dibuat menggunakan bahasa C. Pada program peminjaman buk
 terdapat 50 data buku, dimana hanya 45 data buku yang tersedia sedangkan sisanya dapat diinput oleh pengguna.
 
 #Contribution
+
 Anggota 1
 
 Nama: Alya Natasya
