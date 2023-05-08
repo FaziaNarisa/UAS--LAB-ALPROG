@@ -7,6 +7,7 @@ typedef struct {
     char pengarang[50];
     char penerbit[50];
     int tahun;
+    int status;
 }data;
 data perpus[50];
 int tahun, x, i, pil;
