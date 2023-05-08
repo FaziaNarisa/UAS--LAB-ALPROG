@@ -273,9 +273,6 @@ void input(){
         printf("Kuota buku sudah penuh!\n");
         return;
     }
-    printf("\n===========================================================================================================\n");
-    printf("||                                               Menginput Buku                                            ||\n");
-    printf("===========================================================================================================\n");
     printf("Masukkan judul buku: ");
     fflush(stdin);
     fgets(perpus[x].judul, 50, stdin);
@@ -303,11 +300,7 @@ void cari(){
     char judul[50];
     int found = 0;
     
-    printf("\n===========================================================================================================\n");
-    printf("||                                               Mencari Buku                                            ||\n");
-    printf("===========================================================================================================\n");
-    
-    printf("Masukkan judul buku yang ingin dicari: ");
+    printf("\nMasukkan judul buku yang ingin dicari: ");
     fflush(stdin); 
     fgets(judul, 50, stdin);
     judul[strcspn(judul, "\n")] = '\0';
