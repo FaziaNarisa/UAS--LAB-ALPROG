@@ -413,6 +413,53 @@ int getJumlahPeminjaman(){
     return jumlahPeminjaman;
 }
 
+void kembalikan(){
+    if(x == 0){
+        printf("Buku Masih dalam Peminjaman");
+        return;
+    }
+    int jumlahPeminjaman = getJumlahPeminjaman();
+    if(jumlahPeminjaman = 0){
+        printf("Buku Masih dalam Peminjaman");
+        return;
+    }
+    int i;
+
+    printf("===================================================================================================================================\n");
+    printf("||%-5s||%-30s||%-22s||%-25s||%-15s||%-20s||\n", "No", "Judul Buku", "Nama Pengarang", "Penerbit", "Tahun Terbit", "Status");
+    printf("-----------------------------------------------------------------------------------------------------------------------------------\n");
+    for(i = 0; i < x; i++){
+        listOneBook(i);
+    }
+    printf("===================================================================================================================================\n\n");
+
+    int pilihBuku;
+
+    do{
+        printf("\nMasukkan nomor buku yang ingin dikembalikan: ");
+        scanf("%d", &pilihBuku);
+
+        pilihBuku--;
+        if(perpus[pilihBuku].status != 0){
+            printf("Harap memasukkan nomor buku yang dipinjam\n");
+        }
+    }while(perpus[pilihBuku].status != 0 &&(pilihBuku < 1 || pilihBuku > jumlahPeminjaman));
+
+    char konfir;
+    do{
+        printf("Apakah Anda ingin mengembalikan buku dengan judul %s [Y/T]? ", perpus[pilihBuku].judul);
+        fflush(stdin);
+        konfir = (char) getchar();
+
+        if(konfir == 'Y'){
+            printf("Buku %s berhasil dikembalikan\n\n", perpus[pilihBuku].judul);
+            perpus[pilihBuku].status = 1;
+        }else{
+            printf("Buku %s gagal dikembalikan\n\n", perpus[pilihBuku].judul);
+        }
+    }while(konfir != 'Y' && konfir != 'T');
+}
+
 int main(){
 
     init();
