@@ -273,7 +273,7 @@ void input(){
         printf("Kuota buku sudah penuh!\n");
         return;
     }
-    printf("Masukkan judul buku: ");
+    printf("\nMasukkan judul buku: ");
     fflush(stdin);
     fgets(perpus[x].judul, 50, stdin);
     perpus[x].judul[strcspn(perpus[x].judul, "\n")] = '\0';
