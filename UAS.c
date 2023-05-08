@@ -196,10 +196,10 @@ void init(){
     perpus[x].tahun = 2010;
     perpus[x].status = 1;
     x++;
-    strcpy(perpus[x].judul, "Esok Lebih Baik");
-    strcpy(perpus[x].pengarang, "Dr. Abdullah Al-Maghluts");
-    strcpy(perpus[x].penerbit, "Gemilang");
-    perpus[x].tahun = 2022;
+    strcpy(perpus[x].judul, "Tastes Like War");
+    strcpy(perpus[x].pengarang, "Grace M. Cho");
+    strcpy(perpus[x].penerbit, "The Feminist Press");
+    perpus[x].tahun = 2021;
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Tuan Direktur");
