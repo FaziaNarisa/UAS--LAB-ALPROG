@@ -98,10 +98,10 @@ void init(){
     perpus[x].tahun = 2018;
     perpus[x].status = 1;
     x++;
-    strcpy(perpus[x].judul, "Desiran Angin Laut");
-    strcpy(perpus[x].pengarang, "Alnira");
-    strcpy(perpus[x].penerbit, "Gramedia Widiasarana Indonesia");
-    perpus[x].tahun = 2019;
+    strcpy(perpus[x].judul, "Bad Gays: A Homosexual History");
+    strcpy(perpus[x].pengarang, "Huw Lemmey, Ben Miller");
+    strcpy(perpus[x].penerbit, "Verso");
+    perpus[x].tahun = 2022;
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "The Trackers");
