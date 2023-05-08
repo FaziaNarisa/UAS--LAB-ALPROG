@@ -12,6 +12,16 @@ data perpus[50];
 int tahun, x, i, pil;
 char jd[50];
 
+void listOneBook(int i){
+    printf("||%-5d||%-30s||%-20s||%-25s||%-15d||", (i+1), perpus[i].judul, perpus[i].pengarang, perpus[i].penerbit, perpus[i].tahun, perpus[i].status);
+
+    char status[25] = "Buku Tersedia";
+    if(perpus[i].status == 0){
+        strcpy(status, "Buku Tidak Tersedia");
+    }
+    printf("%-20s||\n", status);
+}
+
 void lihat(){
     int i;
 
