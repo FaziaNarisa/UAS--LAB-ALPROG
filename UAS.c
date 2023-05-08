@@ -112,7 +112,7 @@ void init(){
     perpus[x].tahun = 2023;
     perpus[x].status = 1;
     x++;
-        strcpy(perpus[x].judul, "Catatan Najwa 2");
+    strcpy(perpus[x].judul, "Catatan Najwa 2");
     strcpy(perpus[x].pengarang, "Najwa Shihab");
     strcpy(perpus[x].penerbit, "Literati Books");
     perpus[x].tahun = 2020;
