@@ -237,6 +237,9 @@ void pinjam(){
     list();
 
     do{
+        printf("\n===========================================================================================================\n");
+        printf("||                                               Peminjaman Buku                                            ||\n");
+        printf("===========================================================================================================\n");
         printf("\nMasukkan Nomor Buku: ");
         scanf("%d", &pilihBuku);
     }while(pilihBuku < 1 || pilihBuku > x);
@@ -266,6 +269,9 @@ void input(){
         printf("Kuota buku sudah penuh!\n");
         return;
     }
+    printf("\n===========================================================================================================\n");
+    printf("||                                               Menginput Buku                                            ||\n");
+    printf("===========================================================================================================\n");
     printf("Masukkan judul buku: ");
     fflush(stdin);
     fgets(perpus[x].judul, 50, stdin);
