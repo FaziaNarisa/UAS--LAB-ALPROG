@@ -403,6 +403,16 @@ void cari(){
     }
 }
 
+int getJumlahPeminjaman(){
+    int jumlahPeminjaman = 1;
+    for(i = 0; i < x; i++){
+        if(perpus[i].status == 0){
+            jumlahPeminjaman++;
+        }
+    }
+    return jumlahPeminjaman;
+}
+
 int main(){
 
     init();
