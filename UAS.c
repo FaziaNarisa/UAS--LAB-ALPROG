@@ -14,7 +14,7 @@ int tahun, x, i, pil;
 char jd[50];
 
 void listOneBook(int i){
-    printf("||%-5d||%-30s||%-20s||%-25s||%-15d||", (i+1), perpus[i].judul, perpus[i].pengarang, perpus[i].penerbit, perpus[i].tahun, perpus[i].status);
+    printf("||%-5d||%-30s||%-22s||%-25s||%-15d||", (i+1), perpus[i].judul, perpus[i].pengarang, perpus[i].penerbit, perpus[i].tahun, perpus[i].status);
 
     char status[25] = "Buku Tersedia";
     if(perpus[i].status == 0){
@@ -23,16 +23,20 @@ void listOneBook(int i){
     printf("%-20s||\n", status);
 }
 
-void lihat(){
-    int i;
-
-    printf("===========================================================================================================\n");
-    printf("||%-5s||%-30s||%-25s||%-30s||%-15s||\n", "No", "Judul Buku", "Nama Pengarang", "Penerbit", "Tahun Terbit");
-    printf("-----------------------------------------------------------------------------------------------------------\n");
-    for(i = 0; i < x; i++){
-        printf("||%-5d||%-30s||%-25s||%-30s||%-15d||\n", (i+1), perpus[i].judul, perpus[i].pengarang, perpus[i].penerbit, perpus[i].tahun);
+void list(){
+    if(x == 0){
+        printf("Buku Masih dalam Peminjaman");
+        return;
     }
-    printf("===========================================================================================================\n");
+    
+    int i;
+    printf("===================================================================================================================================\n");
+    printf("||%-5s||%-30s||%-22s||%-25s||%-15s||%-20s||\n", "No", "Judul Buku", "Nama Pengarang", "Penerbit", "Tahun Terbit", "Status");
+    printf("-----------------------------------------------------------------------------------------------------------------------------------\n");
+    for(i = 0; i < x; i++){
+        listOneBook(i);
+    }
+    printf("===================================================================================================================================\n\n");
 }
 
 void init(){
