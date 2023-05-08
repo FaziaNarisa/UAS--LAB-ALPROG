@@ -44,11 +44,13 @@ void init(){
     strcpy(perpus[x].pengarang, "Henry Manampiring");
     strcpy(perpus[x].penerbit, "Kompas");
     perpus[x].tahun = 2018;
+    perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Laut Bercerita");
     strcpy(perpus[x].pengarang, "Leila Chudori");
     strcpy(perpus[x].penerbit, "KPG");
     perpus[x].tahun = 2017;
+    perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Melati");
     strcpy(perpus[x].pengarang, "Chacha");
