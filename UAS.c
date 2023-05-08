@@ -161,7 +161,7 @@ void init(){
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Percakapan Politik");
-    strcpy(perpus[x].pengarang, "A.Sudiarja");
+    strcpy(perpus[x].pengarang, "A. Sudiarja");
     strcpy(perpus[x].penerbit, "Kompas");
     perpus[x].tahun = 2020;
     perpus[x].status = 1;
@@ -197,7 +197,7 @@ void init(){
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Esok Lebih Baik");
-    strcpy(perpus[x].pengarang, "Dr.Abdullah Al-Maghluts");
+    strcpy(perpus[x].pengarang, "Dr. Abdullah Al-Maghluts");
     strcpy(perpus[x].penerbit, "Gemilang");
     perpus[x].tahun = 2022;
     perpus[x].status = 1;
@@ -263,7 +263,7 @@ void init(){
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Ansdalusia");
-    strcpy(perpus[x].pengarang, "Dr.Abdurrahman");
+    strcpy(perpus[x].pengarang, "Dr. Abdurrahman");
     strcpy(perpus[x].penerbit, "Alvabet");
     perpus[x].tahun = 2022;
     perpus[x].status = 1;
@@ -305,7 +305,7 @@ void init(){
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Membaca Ekspresif");
-    strcpy(perpus[x].pengarang, "Prof.Dr.Henry Guntur");
+    strcpy(perpus[x].pengarang, "Prof.Dr. Henry Guntur");
     strcpy(perpus[x].penerbit, "Angkasa");
     perpus[x].tahun = 2011;
     perpus[x].status = 1;
