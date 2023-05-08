@@ -486,7 +486,12 @@ int main(){
              case 4:
                 pinjam();
                 break;
-             printf("5.Keluar\n");
+             case 5:
+                kembalikan();
+                break;
+             case 6:
+                printf("Keluar\n");
+                break;
         }
-    }while(pil!=5);
+    }while(pil!=6);
 }
