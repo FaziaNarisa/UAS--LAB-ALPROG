@@ -214,10 +214,10 @@ void init(){
     perpus[x].tahun = 2022;
     perpus[x].status = 1;
     x++;
-    strcpy(perpus[x].judul, "Memoar Maria");
-    strcpy(perpus[x].pengarang, "Safira Hapsari");
-    strcpy(perpus[x].penerbit, "Elex Media Komputindo");
-    perpus[x].tahun = 2019;
+    strcpy(perpus[x].judul, "Atalanta");
+    strcpy(perpus[x].pengarang, "Jennifer Saint");
+    strcpy(perpus[x].penerbit, "Flatiron Books");
+    perpus[x].tahun = 2023;
     perpus[x].status = 1;
     x++;
     strcpy(perpus[x].judul, "Apology");
