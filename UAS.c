@@ -9,7 +9,7 @@ typedef struct {
     int tahun;
 }data;
 data perpus[50];
-int tahun, x, i, pil,j;
+int tahun, x, i, pil;
 char jd[50];
 
 void lihat(){
