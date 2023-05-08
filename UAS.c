@@ -469,7 +469,8 @@ int main(){
         printf("2.Mencari Buku\n");
         printf("3.Menambah Data Buku\n");
         printf("4.Meminjam Buku\n");
-        printf("5.Keluar\n");
+        printf("5.Mengembalikan Buku\n");
+        printf("6.Keluar\n");
         printf("\nPilihan: ");
         scanf("%d", &pil);
         switch(pil){
@@ -485,9 +486,7 @@ int main(){
              case 4:
                 pinjam();
                 break;
-             case 5:
-                printf("Keluar\n");
-                break;
+             printf("5.Keluar\n");
         }
     }while(pil!=5);
 }
