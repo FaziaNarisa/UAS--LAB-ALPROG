@@ -463,7 +463,7 @@ int main(){
 
     init();
     do{
-        printf("\n======================================================    Program Peminjaman Buku    ============================================\n\n");
+        printf("\n======================================================    Program Manajemen Perpustakaan    ============================================\n\n");
         printf("1.Menampilkan Data Buku\n");
         printf("2.Mencari Buku\n");
         printf("3.Menambah Data Buku\n");
