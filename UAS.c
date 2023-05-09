@@ -11,7 +11,6 @@ typedef struct {
 }data;
 data perpus[50];
 int tahun, x, i, pil;
-char jd[50];
 
 void listOneBook(int i){
     printf("||%-5d||%-30s||%-22s||%-25s||%-15d||", (i+1), perpus[i].judul, perpus[i].pengarang, perpus[i].penerbit, perpus[i].tahun, perpus[i].status);
