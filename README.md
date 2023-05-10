@@ -1,5 +1,5 @@
 # UAS-LAB ALPROG
-Program Peminjaman dan Pengembalian Buku.
+Program manajemen perpustakaan sederhana yang dapat mengelola data buku dan peminjaman buku.
 
 # Description
 Program ini dibuat untuk memenuhi mata kuliah Algoritma dan Pemograman.
